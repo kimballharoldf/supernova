@@ -17,19 +17,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">Supernova</a>
+      <a href="/" class="navbar-brand">Supernova - A Private FFXI Server</a>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/about">About</a></li>
+        <li><%= link_to "News", news_path %></li>
+        <li><%= link_to "Patch Notes", patch_notes_path %></li>
+        <li><%= link_to "Setup", setup_path %></li>
+        <li><%= link_to "FAQ", faq_path %></li>
+        <li><%= link_to "About", about_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
-
-  <div class="container">
-    <%= yield %>
-  </div>
-
+   <%= yield %>
 </body>
 </html>
