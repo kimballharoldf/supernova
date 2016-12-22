@@ -1,0 +1,106 @@
+<div class="container">
+    <h3 class="text-left">Setup and Installation</h3>
+    <br>
+    <h4 class="text-left">Initial File Download</h3>
+    <div class="well">
+      First, download all required files. Place them in an easy to access folder. 
+      <br>
+      <br>
+      Download the FFXI Client from playonline: <a href="http://www.playonline.com/ff11us/download/media/install_win.html" class="btn btn-primary btn-xs">FFXI Download</a>
+      <br>
+      <br>
+      Download the FFXI Darkstar Patch: <a href="http://www.dspt.info/FFXI-UpdatePatch.zip" class="btn btn-primary btn-xs">Darkstar Patch</a>
+      <br>
+      <br>
+      Download XILoader: <a href="https://github.com/DarkstarProject/xiloader/releases/latest" class="btn btn-primary btn-xs">XILoader</a>
+      <br>
+      <br>
+      Download MSVC 2015 Runtimes x86 version: <a href="https://www.microsoft.com/en-ca/download/details.aspx?id=48145" class="btn btn-primary btn-xs">MSVC Runtimes</a>
+      <br>
+      <br>
+      Download Windower: <a href="http://windower.net/" class="btn btn-primary btn-xs">Windower</a>
+      <br>
+      <br>
+      <b>Optional</b>: Download Supernova Custom .dats <a href="https://dl.dropboxusercontent.com/u/57303795/Supernova%20custom%20.dats.zip" class="btn btn-primary btn-xs">Supernova Dats</a>
+    </div>
+    <h4 class="text-left">POL Installation and Update</h3>
+    <div class="well">
+      <ol>
+        <li>Install FFXI and POL via the downloaded executable provided from playonline.com.</li>
+        <li>Run PlayOnline and let it Update.</li>
+          <Ul>
+            <li>Once PlayOnline (POL) has updated and restarted, it will ask if you are a new or existing user</li>
+            <li><b>Choose Existing User</b> using 1234567 as username/pass/account id etc.</li>
+            <li>Exit POL</li>
+          </Ul>
+        <li>Prep FFXI for Update</li>
+          <Ul>
+            <li>Extract the contents of the <b>Darkstar Patch</b>.</li>
+            <li>Copy the contents of the patch.</li>
+            <li>Paste the contents of the patch into the FFXI Directory, normally located at: C:\Program Files (x86)\PlayOnline\SquareEnix\FINAL FANTASY XI\</li>
+            <li>You should be prompted for overwriting files, select overwrite all files.</li>
+          </Ul>
+        <li>Update FFXI</li>
+          <ul>
+            <li>Open POL.</li>
+            <li>On the left side of the screen select "Check Files".</li>
+              <ul>
+                <li>If you get a separate popup window that says it's launching the FFXI installer or asks for install discs you can just close it.</li>
+              </ul>
+            <li>On the next screen where it says "<b>PlayOnlineViewer</b>" click the two arrows and change it to "<b>Final Fantasy XI</b>". The "<b>version</b>" should be "<b>UNKNOWN</b>"</li>
+            <li>Click on the Check Files button.</li>
+            <li>The initial file check will take around 15-20 minutes. This will show there are errors. When prompted, choose to fix errors</li>
+            <li>POL will now update. The process will take 5-10 hours, depending on connection speed.</li>
+          </ul>
+        <li>Post Update</li>
+          <ul>
+            <li>Once FFXI is done updating, navigate to C:\Program Files (x86)\PlayOnline\SquareEnix\PlayOnlineViewer</li>
+            <li>Right-click the "<b>data</b>" folder and select copy</li>
+            <li>Navigate to C:\Program Files (x86)\PlayOnline\SquareEnix\FINAL FANTASY XI, right click an empty space in the folder and click paste. You should now have the "<b>data</b>" folder inside your /FINAL FANTASY XI/ folder.</li>
+          </ul>
+      </ol>
+    </div>
+    <h4 class="text-left">Connecting to Supernova</h3>
+    <div class="well">
+      <ol>
+        <li>XILoader</li>
+          <ul>
+            <li>Place the xiloader.exe in your POL folder (C:\Program Files (x86)\PlayOnline\SquareEnix\PlayOnlineViewer)</li>
+            <li>Set pol.exe and xiloader.exe to run as administrator by right-clicking on them and going Properties, opening the Compatibility tab and clicking the Run as Administrator checkbox at the bottom of the window.</li>
+          </ul>
+        <li>Install 2015 Runtimes x86 version</li>
+        <li><b>Optional: Supernova Custom .dats installation</b></li>
+          <ul>
+            <li>Extract the files.</li>
+            <li>Copy music176.bgw and paste into C:\Program Files (x86)\PlayOnline\SquareEnix\final fantasy XI\sound4\win\music\data overwriting the existing file.</li>
+            <li>Copy 69.dat and paste into PlayOnline\SquareEnix\FINAL FANTASY XI\ROM4\1 overwriting the existing file.</li>
+            <li><b>Optional:</b> Delete vulgar2.dic from PlayOnline\SquareEnix\FINAL FANTASY XI\data\dic to disable swear filters, as the setting does not get saved.</li>
+          </ul>
+        <li>Install Windower 4</li>
+          <ul>
+            <li>Open Windower 4 and create a profile, highlight your new profile, and click on the pencil icon to adjust your desired settings.</li>
+            <li>Click the pin icon to create a desktop shortcut.</li>
+            <li>Exit Windower 4.</li>
+            <li>Navigate to C:\Program Files (x86)\Windower4 and edit the settings.xml file with notepad</li>
+              <ul>
+                <li>Note: If you have issues with your settings.xml file changes sticking, then copy the file elsewhere, edit it there, and copy it back to the original location.</li>
+              </ul>
+            <li>Somewhere between the tags &lt;profile name=&quot;YourProfile&quot;&gt; and &lt;profile&gt;, (where YourProfile is what you named the profile you created) include the following code:
+            <br>
+            <div class="well well-sm well-code">&lt;args&gt;--server 73.84.8.118&lt;/args&gt;
+                    <br>
+                    &lt;executable&gt;xiloader.exe&lt;/executable&gt;</div>
+            <li>Launch Windower with your chosen profile</li>
+            <li>The xiloader window will open, where you can log in and register a new account. To create a new account, enter 2 and hit enter, then enter your username and password and confirm your password.
+            <br><div class="well well-sm well-code"><img src="http://vignette2.wikia.nocookie.net/supernovaffxi/images/7/72/Xiloader.png/revision/latest/scale-to-width-down/640?cb=20150524155028" alt="XI Loader Example Screen"></div></li>
+            <li>To log in, enter 1 and enter your username and password.</li>
+            <li>If you want the program to remember your username and password, you can put them into the <args> section of the settings.xml file as below:
+            <br><div class="well well-sm well-code">&lt;args&gt;--server 73.84.8.118 --user your_username --password your_password&lt;/args&gt;
+                &lt;executable&gt;xiloader.exe&lt;/executable&gt;</div>
+                <br>
+                Where your_username is your username and your_password is your password.</li>
+            <li>Once you log in, Final Fantasy will start and you can create your character, choose your starting town, and get playing!</li>
+          </ul>
+      </ol>
+    </div>
+</div>
