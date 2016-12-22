@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  def index
+  def home
     @current_time = Time.zone.now.in_time_zone("Eastern Time (US & Canada)")
   end
   
