@@ -16,9 +16,10 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-//@import "font-awesome-sprockets"; @import "font-awesome";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
     font-family: 'Oxygen', sans-serif;
 }
 
@@ -51,4 +52,7 @@ h1,h2,h3 {
 .navbar-default .navbar-nav > li > a:hover {
   color: white;
   opacity: 0.75;
+}
+.well-code{
+  background: white;
 }
