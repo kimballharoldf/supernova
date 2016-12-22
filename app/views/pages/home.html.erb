@@ -1,6 +1,6 @@
 <div class="container">
   <h3 class="text-left">Server Status</h3>
-    <div class="well">
+    <div class="well well-sm">
       Current Server Time (EST): <%= @current_time %>
       <br>
       Login Server Status:
@@ -11,8 +11,9 @@
     </div>
 </div>
 <div class="container">
-  <h3 class="text-left">Latest News</h3>
-    <div class="well">
-      News Goes Here
+  <h3 class="text-left">Latest News - <%= @post.title %></h3>
+    <h6>Posted On: <%= @post.created_at.strftime("%B, %d, %Y")%></h6>
+    <div class="well well-sm">
+      <p><%= @post.body %></p>
     </div>
 </div>
