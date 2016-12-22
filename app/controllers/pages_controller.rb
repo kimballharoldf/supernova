@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
     @current_time = Time.zone.now.in_time_zone("Eastern Time (US & Canada)")
+    @post = Post.last
   end
   
   def about
