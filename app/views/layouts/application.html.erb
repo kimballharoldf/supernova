@@ -25,7 +25,7 @@
           <li><%= link_to "Setup", setup_path %></li>
           <li><%= link_to "FAQ", faq_path %></li>
           <li><%= link_to "About", about_path %></li>
-          <li><%= link_to image_tag("discord.png", :alt => "Discord Logo", height: 25, width: 25), "http://discord.gg/QBBdfQh"%></li>
+          <li><%= link_to image_path("discord.png", :alt => "Discord Logo", height: 25, width: 25), "http://discord.gg/QBBdfQh"%></li>
           <li> <%= link_to "https://www.facebook.com/groups/Supernovah/", class: "navbar-brand" do %>
                 <i class="fa fa-facebook"></i>
                <% end %>
@@ -53,7 +53,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-2 col-md-offset-9 float-right">
-        <%= img_tag("logo.png", :alt => "FFXI Logo") %>
+        <%= timg_path("logo.png", :alt => "FFXI Logo") %>
       </div>
       </div>
     </div>
