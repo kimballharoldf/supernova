@@ -6,7 +6,6 @@ class PagesController < ApplicationController
     @current_time = Time.zone.now.in_time_zone("Eastern Time (US & Canada)")
     @post = Post.last
     
-    host = 'supernovaffxi.ddns.net'
     p1 = Net::Ping::TCP.new(host, 54230)
     p2 = Net::Ping::TCP.new(host, 54230)
     p3 = Net::Ping::TCP.new(host, 54231)

@@ -3,9 +3,19 @@
     <div class="well well-sm">
       Current Server Time (EST): <%= @current_time.strftime("%b %e, %l:%M %p") %>
       <br>
-      Login Server Status: <%= @login %>
+      Login Server Status: 
+      <% if @login == "Online" %>
+        <span class="label label-success">Online</span>
+      <% else %>
+        <span class="label label-danger">Offline</span>
+      <% end %>
       <br>
-      World Server Status: <%= @world %>
+      World Server Status: 
+      <% if @world == "Online" %>
+        <span class="label label-success">Online</span>
+      <% else %>
+        <span class="label label-danger">Offline</span>
+      <% end %>
     </div>
 </div>
 <div class="container">
