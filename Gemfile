@@ -38,7 +38,11 @@ gem 'bootstrap-sass', '3.3.7'
 # Use Font Awesome sass gem for adding icons
 gem 'font-awesome-sass', '4.6.2'
 
+# Use Devise for User Auth
 gem 'devise','~> 3.4.1'
+
+#Use Ping to check server status
+gem 'net-ping', '2.0.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
