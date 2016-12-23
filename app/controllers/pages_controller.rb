@@ -6,10 +6,9 @@ class PagesController < ApplicationController
     @current_time = Time.zone.now.in_time_zone("Eastern Time (US & Canada)")
     @post = Post.last
     
-    p1 = Net::Ping::TCP.new(host, 99999)
-    p2 = Net::Ping::TCP.new(host, 54230)
-    p3 = Net::Ping::TCP.new(host, 54231)
-    p4 = Net::Ping::TCP.new(host, 54001)
+    p1 = Net::Ping::TCP.new(host, 54230)
+    p2 = Net::Ping::TCP.new(host, 54231)
+    p3 = Net::Ping::TCP.new(host, 54001)
     
     if p1.ping? == true
       @world = "Online"
@@ -17,7 +16,7 @@ class PagesController < ApplicationController
       @world = "Offline"
     end
     
-    if p2.ping? == true && p3.ping? && p4.ping?
+    if p1.ping? == true && p2.ping? && p3.ping?
       @login = "Online"
     else
       @login = "Offline"
