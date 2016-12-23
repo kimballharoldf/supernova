@@ -28,4 +28,13 @@ module Workspace
     
     config.exceptions_app = self.routes
   end
+  
+  supernova::Application.configure do
+    
+   # your config settings
+ 
+   config.assets.compile = true
+ 
+   # your other config settings
+end
 end
