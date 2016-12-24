@@ -29,9 +29,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .navbar {
-    background: #6441A5; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #6441A5 , #2a0845); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #6441A5 , #2a0845); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9ffffd+0,4d85c1+35,272c38+75 */
+  background: #9ffffd; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #9ffffd 0%, #4d85c1 35%, #272c38 75%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #9ffffd 0%,#4d85c1 35%,#272c38 75%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #9ffffd 0%,#4d85c1 35%,#272c38 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ffffd', endColorstr='#272c38',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .navbar {
   border: none;
