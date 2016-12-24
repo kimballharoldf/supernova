@@ -1,4 +1,7 @@
 <div class="container">
+  <%= image_tag("banner.jpg", :alt => "Banner", class: "home-banner") %>
+</div>
+<div class="container">
   <h3 class="text-left">Server Status</h3>
     <div class="well well-sm">
       Current Server Time (EST): <%= @current_time.strftime("%b %e, %l:%M %p") %>

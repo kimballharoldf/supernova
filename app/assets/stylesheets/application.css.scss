@@ -23,6 +23,11 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Oxygen', sans-serif;
 }
 
+.home-banner {
+  display: block;
+  margin: 0 auto;
+}
+
 .navbar {
     background: #6441A5; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #6441A5 , #2a0845); /* Chrome 10-25, Safari 5.1-6 */
