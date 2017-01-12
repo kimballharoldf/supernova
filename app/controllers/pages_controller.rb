@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   
   def home
     require 'net/ping'
-    host = 'supernovaffxi.ddns.net'
+    host = 'login.supernovaffxi.com'
     @current_time = Time.zone.now.in_time_zone("Eastern Time (US & Canada)")
     @post = Post.last
     
@@ -16,7 +16,7 @@ class PagesController < ApplicationController
       @world = "Offline"
     end
     
-    if p1.ping? == true && p2.ping? && p3.ping?
+    if p2.ping? == true && p3.ping? == true
       @login = "Online"
     else
       @login = "Offline"
